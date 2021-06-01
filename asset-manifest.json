@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/samsonodiagbe/static/css/main.bc28a74a.chunk.css",
+    "main.js": "/samsonodiagbe/static/js/main.3c1c5a68.chunk.js",
+    "main.js.map": "/samsonodiagbe/static/js/main.3c1c5a68.chunk.js.map",
+    "runtime-main.js": "/samsonodiagbe/static/js/runtime-main.c5309243.js",
+    "runtime-main.js.map": "/samsonodiagbe/static/js/runtime-main.c5309243.js.map",
+    "static/js/2.d8504e54.chunk.js": "/samsonodiagbe/static/js/2.d8504e54.chunk.js",
+    "static/js/2.d8504e54.chunk.js.map": "/samsonodiagbe/static/js/2.d8504e54.chunk.js.map",
+    "index.html": "/samsonodiagbe/index.html",
+    "static/css/main.bc28a74a.chunk.css.map": "/samsonodiagbe/static/css/main.bc28a74a.chunk.css.map",
+    "static/js/2.d8504e54.chunk.js.LICENSE.txt": "/samsonodiagbe/static/js/2.d8504e54.chunk.js.LICENSE.txt",
+    "static/media/cenacle.b9f79529.svg": "/samsonodiagbe/static/media/cenacle.b9f79529.svg",
+    "static/media/chat_ui.16386631.svg": "/samsonodiagbe/static/media/chat_ui.16386631.svg",
+    "static/media/checkout_ui.c9967ce7.svg": "/samsonodiagbe/static/media/checkout_ui.c9967ce7.svg",
+    "static/media/eduonix.75a061c0.svg": "/samsonodiagbe/static/media/eduonix.75a061c0.svg",
+    "static/media/header_image.8c619236.svg": "/samsonodiagbe/static/media/header_image.8c619236.svg",
+    "static/media/hover_board.506da2c1.svg": "/samsonodiagbe/static/media/hover_board.506da2c1.svg",
+    "static/media/portfolio.b070a417.svg": "/samsonodiagbe/static/media/portfolio.b070a417.svg",
+    "static/media/rally.c44e44e0.svg": "/samsonodiagbe/static/media/rally.c44e44e0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5309243.js",
+    "static/js/2.d8504e54.chunk.js",
+    "static/css/main.bc28a74a.chunk.css",
+    "static/js/main.3c1c5a68.chunk.js"
+  ]
+}
