@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/samsonodiagbe/static/css/main.bc28a74a.chunk.css",
+    "main.css": "/samsonodiagbe/static/css/main.89c8caf2.chunk.css",
     "main.js": "/samsonodiagbe/static/js/main.3c1c5a68.chunk.js",
     "main.js.map": "/samsonodiagbe/static/js/main.3c1c5a68.chunk.js.map",
     "runtime-main.js": "/samsonodiagbe/static/js/runtime-main.c5309243.js",
@@ -8,7 +8,7 @@
     "static/js/2.d8504e54.chunk.js": "/samsonodiagbe/static/js/2.d8504e54.chunk.js",
     "static/js/2.d8504e54.chunk.js.map": "/samsonodiagbe/static/js/2.d8504e54.chunk.js.map",
     "index.html": "/samsonodiagbe/index.html",
-    "static/css/main.bc28a74a.chunk.css.map": "/samsonodiagbe/static/css/main.bc28a74a.chunk.css.map",
+    "static/css/main.89c8caf2.chunk.css.map": "/samsonodiagbe/static/css/main.89c8caf2.chunk.css.map",
     "static/js/2.d8504e54.chunk.js.LICENSE.txt": "/samsonodiagbe/static/js/2.d8504e54.chunk.js.LICENSE.txt",
     "static/media/cenacle.b9f79529.svg": "/samsonodiagbe/static/media/cenacle.b9f79529.svg",
     "static/media/chat_ui.16386631.svg": "/samsonodiagbe/static/media/chat_ui.16386631.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.c5309243.js",
     "static/js/2.d8504e54.chunk.js",
-    "static/css/main.bc28a74a.chunk.css",
+    "static/css/main.89c8caf2.chunk.css",
     "static/js/main.3c1c5a68.chunk.js"
   ]
 }
