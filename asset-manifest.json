@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/samsonodiagbe/static/css/main.407f1fac.chunk.css",
-    "main.js": "/samsonodiagbe/static/js/main.f5269894.chunk.js",
-    "main.js.map": "/samsonodiagbe/static/js/main.f5269894.chunk.js.map",
+    "main.js": "/samsonodiagbe/static/js/main.f5350c0a.chunk.js",
+    "main.js.map": "/samsonodiagbe/static/js/main.f5350c0a.chunk.js.map",
     "runtime-main.js": "/samsonodiagbe/static/js/runtime-main.c5309243.js",
     "runtime-main.js.map": "/samsonodiagbe/static/js/runtime-main.c5309243.js.map",
     "static/js/2.d8504e54.chunk.js": "/samsonodiagbe/static/js/2.d8504e54.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.c5309243.js",
     "static/js/2.d8504e54.chunk.js",
     "static/css/main.407f1fac.chunk.css",
-    "static/js/main.f5269894.chunk.js"
+    "static/js/main.f5350c0a.chunk.js"
   ]
 }
