@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const NavbarComponent = () => {
   return (
-    <nav className="flex justify-between px-[100px] py-[30px]">
+    <nav className="flex justify-between px-[100px] py-[30px] sticky top-0 bg-white">
       <h1 className="font-black text-2xl">samsonodiagbe</h1>
 
       <ul className="flex min-w-[300px] justify-between">
