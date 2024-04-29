@@ -2,13 +2,15 @@ import AnimatedComponent from "@/components/app-ui/animatedComponent";
 import CustomButton from "@/components/app-ui/button";
 import FormComponent from "@/components/app-ui/formComponent";
 import ProjectComponent from "@/components/app-ui/projectCard";
-import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/lib/data";
 
 export default function Home() {
   return (
     <>
-      <header className="grid grid-cols-2 gap-[20px] p-[100px]" id="about-me">
+      <header
+        className="p-[30px] grid lg:grid-cols-2 lg:gap-[20px] lg:p-[100px]"
+        id="about-me"
+      >
         <section className="grid gap-[40px]">
           <h1 className="text-8xl font-black">
             Hi, I am <br />
@@ -38,7 +40,7 @@ export default function Home() {
         <h1 className="text-8xl font-black w-[700px] text-center mx-auto mb-[100px]">
           Some of my projects
         </h1>
-        <div className="grid grid-cols-3 gap-[30px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           {portfolioData.map((p) => {
             const { name, detail, img, url } = p;
             return (
@@ -54,7 +56,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="p-[100px] grid grid-cols-[1fr_700px] gap-[20px]"
+        className="grid p-[30px] lg:p-[100px]  lg:grid-cols-[1fr_700px] gap-[20px]"
         id="contact"
       >
         <section className="grid gap-[30px]">
