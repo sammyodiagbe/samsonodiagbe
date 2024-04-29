@@ -2,7 +2,9 @@ import AnimatedComponent from "@/components/app-ui/animatedComponent";
 import CustomButton from "@/components/app-ui/button";
 import FormComponent from "@/components/app-ui/formComponent";
 import ProjectComponent from "@/components/app-ui/projectCard";
+import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/lib/data";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,7 +30,17 @@ export default function Home() {
             difference. Let's collaborate and shape the future together.
           </p>
           <div>
-            <CustomButton content="Download My Resume" />
+            <Button
+              className="w-full py-[30px] mr-2 rounded-full lg:w-[250px]"
+              asChild
+            >
+              <Link
+                href={"/docs/Samson Odiagbe.pdf"}
+                download={"Samson Odiagbe.pdf"}
+              >
+                Download My Resume
+              </Link>
+            </Button>
             <CustomButton variant={"outline"} content="Send Message" />
           </div>
         </section>
