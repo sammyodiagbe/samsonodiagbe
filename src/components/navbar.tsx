@@ -25,7 +25,7 @@ const NavbarComponent = () => {
           </Link>
         </li>
         <li>
-          <Link href={""}>
+          <Link href={"https://www.twitter.com/samiodiagbe/"}>
             <BsTwitterX size={25} />
           </Link>
         </li>
