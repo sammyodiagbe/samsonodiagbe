@@ -1,4 +1,5 @@
 import CustomButton from "@/components/app-ui/button";
+import FormComponent from "@/components/app-ui/formComponent";
 import ProjectComponent from "@/components/app-ui/projectCard";
 import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/lib/data";
@@ -6,7 +7,7 @@ import { portfolioData } from "@/lib/data";
 export default function Home() {
   return (
     <>
-      <header className="grid grid-cols-2 gap-[20px] p-[100px]">
+      <header className="grid grid-cols-2 gap-[20px] p-[100px]" id="about-me">
         <section className="grid gap-[40px]">
           <h1 className="text-8xl font-black">
             Hi, I am <br />
@@ -29,7 +30,7 @@ export default function Home() {
           </div>
         </section>
       </header>
-      <div className="p-[100px]">
+      <div className="p-[100px]" id="portfolio">
         <h1 className="text-8xl font-black w-[700px] text-center mx-auto mb-[100px]">
           Some of my projects
         </h1>
@@ -47,7 +48,10 @@ export default function Home() {
           })}
         </div>
       </div>
-      <div className="p-[100px] grid grid-cols-2">
+      <div
+        className="p-[100px] grid grid-cols-[1fr_700px] gap-[20px]"
+        id="contact"
+      >
         <section className="grid gap-[30px]">
           <h1 className="text-8xl font-black">
             I would love <br />
@@ -63,7 +67,7 @@ export default function Home() {
             growth actually is)
           </p>
         </section>
-        <section></section>
+        <FormComponent />
       </div>
     </>
   );

@@ -10,13 +10,13 @@ const NavbarComponent = () => {
 
       <ul className="flex min-w-[300px] justify-between">
         <li>
-          <Link href={"/"}>Home</Link>
+          <Link href={"#about-me"}>About me</Link>
         </li>
         <li>
-          <Link href={"/"}>Portfolio</Link>
+          <Link href={"#portfolio"}>Portfolio</Link>
         </li>
         <li>
-          <Link href={"/"}>Contact</Link>
+          <Link href={"#contact"}>Contact</Link>
         </li>
       </ul>
       <ul className="flex w-[150px] justify-between">
