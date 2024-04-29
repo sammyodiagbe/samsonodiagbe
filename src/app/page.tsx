@@ -36,13 +36,14 @@ export default function Home() {
         </h1>
         <div className="grid grid-cols-3 gap-[30px]">
           {portfolioData.map((p) => {
-            const { name, detail, img } = p;
+            const { name, detail, img, url } = p;
             return (
               <ProjectComponent
                 detail={detail}
                 name={name}
                 img={img}
                 key={name}
+                url={url}
               />
             );
           })}
