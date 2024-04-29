@@ -1,3 +1,4 @@
+import AnimatedComponent from "@/components/app-ui/animatedComponent";
 import CustomButton from "@/components/app-ui/button";
 import FormComponent from "@/components/app-ui/formComponent";
 import ProjectComponent from "@/components/app-ui/projectCard";
@@ -25,9 +26,12 @@ export default function Home() {
             difference. Let's collaborate and shape the future together.
           </p>
           <div>
-            <CustomButton content="Hire me" />
-            <CustomButton variant={"outline"} content="Send a message" />
+            <CustomButton content="Download My Resume" />
+            <CustomButton variant={"outline"} content="Send Message" />
           </div>
+        </section>
+        <section className="flex items-center justify-center">
+          <AnimatedComponent />
         </section>
       </header>
       <div className="p-[100px]" id="portfolio">
