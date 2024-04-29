@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { BiSolidMessage } from "react-icons/bi";
-import { BsInstagram, BsMailbox, BsTwitter, BsTwitterX } from "react-icons/bs";
+import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 const NavbarComponent = () => {
@@ -19,20 +18,15 @@ const NavbarComponent = () => {
           <Link href={"#contact"}>Contact</Link>
         </li>
       </ul>
-      <ul className="flex w-[150px] justify-between">
+      <ul className="flex w-[100px] justify-between">
         <li>
-          <Link href={""}>
+          <Link href={"https://www.instagram.com/bluapedev/"}>
             <BsInstagram size={25} />
           </Link>
         </li>
         <li>
           <Link href={""}>
             <BsTwitterX size={25} />
-          </Link>
-        </li>
-        <li>
-          <Link href={""}>
-            <MdEmail size={25} />
           </Link>
         </li>
       </ul>
