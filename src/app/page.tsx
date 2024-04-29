@@ -32,7 +32,7 @@ export default function Home() {
             <CustomButton variant={"outline"} content="Send Message" />
           </div>
         </section>
-        <section className="overflow-hidden min-h-[500px]  flex items-center justify-center">
+        <section className=" min-h-[500px]  flex items-center justify-center">
           <AnimatedComponent />
         </section>
       </header>
