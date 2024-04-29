@@ -37,6 +37,8 @@ export default function Home() {
               <Link
                 href={"/docs/Samson Odiagbe.pdf"}
                 download={"Samson Odiagbe.pdf"}
+                target="_blank"
+                rel={"noreferer noopener"}
               >
                 Download My Resume
               </Link>
