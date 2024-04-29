@@ -41,7 +41,13 @@ export default function Home() {
                 Download My Resume
               </Link>
             </Button>
-            <CustomButton variant={"outline"} content="Send Message" />
+            <Button
+              variant={"secondary"}
+              className="w-full py-[30px] mr-2 rounded-full lg:w-[250px]"
+              asChild
+            >
+              <Link href={"#contact"}>Send Me a Message</Link>
+            </Button>
           </div>
         </section>
         <section className=" min-h-[500px]  flex items-center justify-center">
