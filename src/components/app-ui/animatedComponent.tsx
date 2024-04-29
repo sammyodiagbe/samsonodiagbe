@@ -3,12 +3,12 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
-const childStyle = `h-[100px] w-[100px] bg-gray-600 absolute top-[-100px] rounded-md`;
+const childStyle = `w-[40px] top-[-40px] h-[40px] lg:h-[100px] lg:w-[100px] bg-gray-600 absolute lg:top-[-100px] rounded-md`;
 
 const AnimatedComponent = () => {
   return (
     <motion.div
-      className="h-[5px] w-[500px] bg-gray-300 relative after:absolute after:left-[50%]  after:h-[15px] after:w-[15px] after:rounded-full after:bg-inherit"
+      className="w-[250px] h-[5px] lg:w-[500px] bg-gray-300 relative after:absolute after:left-[50%]  after:h-[15px] after:w-[15px] after:rounded-full after:bg-inherit"
       animate={{
         rotate: [-30, 0, 30],
         origin: "center",

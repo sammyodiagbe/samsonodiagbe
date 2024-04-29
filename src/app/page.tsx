@@ -12,7 +12,7 @@ export default function Home() {
         id="about-me"
       >
         <section className="grid gap-[40px]">
-          <h1 className="text-8xl font-black">
+          <h1 className="text-6xl lg:text-8xl font-black">
             Hi, I am <br />
             Samson Odiagbe
           </h1>
@@ -32,12 +32,12 @@ export default function Home() {
             <CustomButton variant={"outline"} content="Send Message" />
           </div>
         </section>
-        <section className="flex items-center justify-center">
+        <section className="overflow-hidden min-h-[500px]  flex items-center justify-center">
           <AnimatedComponent />
         </section>
       </header>
-      <div className="p-[100px]" id="portfolio">
-        <h1 className="text-8xl font-black w-[700px] text-center mx-auto mb-[100px]">
+      <div className="p-[30px] lg:p-[100px]" id="portfolio">
+        <h1 className="text-6xl lg:text-8xl font-black lg:w-[700px] text-center mx-auto mb-[100px]">
           Some of my projects
         </h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
@@ -60,7 +60,7 @@ export default function Home() {
         id="contact"
       >
         <section className="grid gap-[30px]">
-          <h1 className="text-8xl font-black">
+          <h1 className="text-6xl lg:text-8xl font-black">
             I would love <br />
             to hear from you
           </h1>
