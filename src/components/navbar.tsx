@@ -18,13 +18,13 @@ const NavbarComponent = () => {
           <Link href={"#contact"}>Contact</Link>
         </li>
       </ul>
-      <ul className="flex w-[150px] justify-between">
-        <li>
+      <ul className="flex justify-between">
+        <li className="mr-2">
           <Link href={"https://www.instagram.com/bluapedev/"}>
             <BsInstagram size={25} />
           </Link>
         </li>
-        <li>
+        <li className="mr-2">
           <Link href={"https://www.twitter.com/samiodiagbe/"}>
             <BsTwitterX size={25} />
           </Link>
