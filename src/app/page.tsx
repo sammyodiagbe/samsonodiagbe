@@ -35,10 +35,10 @@ export default function Home() {
               asChild
             >
               <Link
-                href={"/docs/Samson Odiagbe.pdf"}
-                download={"Samson Odiagbe.pdf"}
+                href={"/docs/Samson odiagbe resume.pdf"}
+                download={"Samson Odiagbe Resume.pdf"}
                 target="_blank"
-                rel={"noreferer noopener"}
+                rel={"noreferer nofollower noopener"}
               >
                 Download My Resume
               </Link>
