@@ -4,26 +4,35 @@ import { FormEvent, useState } from "react";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import CustomButton from "./button";
-import { Resend } from "resend";
-const resend = new Resend(`${process.env.RESEND_API_KEY}`);
-console.log(`${process.env.RESEND_API_KEY}`);
+import { useToast } from "../ui/use-toast";
 
 const FormComponent = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [sendingMail, setSendingMail] = useState(false);
+  const { toast } = useToast();
 
   const sendMessage = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const sendmessage = await resend.emails.send({
-      from: email,
-      to: "odiagbesamsonosaro@gmail.com",
-      text: message,
-      subject: "",
-      html: ``,
+    setSendingMail(true);
+    const sendMail = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
     });
 
-    console.log(sendMessage);
+    toast({
+      title: "Message sent",
+      description: `Thanks ${name}, your message has been sent to me successfully`,
+      style: { backgroundColor: "slateblue", color: "white" },
+    });
+    setName("");
+    setEmail("");
+    setMessage("");
+    setSendingMail(false);
   };
   return (
     <div>
@@ -36,6 +45,7 @@ const FormComponent = () => {
             placeholder="Your name"
             value={name}
             onChange={(event) => setName(event.target.value)}
+            disabled={sendingMail}
           />
         </div>
         <div className="mb-4">
@@ -45,6 +55,7 @@ const FormComponent = () => {
             placeholder="Your Email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            disabled={sendingMail}
           />
         </div>
         <div className="mb-4">
@@ -53,9 +64,10 @@ const FormComponent = () => {
             placeholder="Your message"
             value={message}
             onChange={(event) => setMessage(event.target.value)}
+            disabled={sendingMail}
           ></Textarea>
         </div>
-        <CustomButton content="Send Your Message" />
+        <CustomButton content="Send Your Message" sendingEmail={sendingMail} />
       </form>
     </div>
   );
