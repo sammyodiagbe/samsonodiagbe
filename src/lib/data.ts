@@ -14,13 +14,6 @@ export const portfolioData: Project[] = [
     url: "https://www.npmjs.com/package/scannad",
   },
   {
-    name: "Rafiki AI App",
-    img: "rafiki.svg",
-    detail:
-      "Curiosity made me build this app, I was watching a video on youtube where the youtuber was talking about openai API, and voila i decided to build something like chatgpt, I learnt a lot from working with API, to understanding layouts with tailwindcss.",
-    url: "https://rafiki-mbxtalhqi-sammyodiagbes-projects.vercel.app/",
-  },
-  {
     name: "Bookmark Landing Page",
     img: "bookmark.svg",
     detail:
