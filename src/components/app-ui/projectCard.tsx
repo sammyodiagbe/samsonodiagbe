@@ -7,15 +7,9 @@ import {
   CardTitle,
 } from "../ui/card";
 import Image from "next/image";
+import { Project } from "@/lib/data";
 
-type ComponentType = {
-  detail: string;
-  img: string;
-  name: string;
-  url: string;
-};
-
-const ProjectComponent: React.FC<ComponentType> = ({
+const ProjectComponent: React.FC<Project> = ({
   detail,
   img,
   name,
@@ -33,7 +27,7 @@ const ProjectComponent: React.FC<ComponentType> = ({
         />
       </div>
       <div className="mb-[80px]">
-        <h1 className="mb-5 text-[18px] font-bold" mb-5>
+        <h1 className="mb-5 text-[18px] font-bold">
           {name}
         </h1>
         <p className="leading-8">{detail}</p>
@@ -43,7 +37,7 @@ const ProjectComponent: React.FC<ComponentType> = ({
           href={url}
           className="text-blue-700 font-bold"
           target="_blank"
-          rel="norefferer noopener"
+          rel="noopener noreferrer"
         >
           Visit Website
         </Link>

@@ -1,4 +1,18 @@
-export const portfolioData = [
+export type Project = {
+  name: string;
+  img: string;
+  detail: string;
+  url: string;
+};
+
+export const portfolioData: Project[] = [
+  {
+    name: "ScannaD",
+    img: "scannad.png",
+    detail:
+      "A CLI tool that scans git diffs for API keys and secrets before commits. Protect your codebase by automatically detecting and preventing commits containing sensitive information like API keys, passwords, tokens, and other secrets. Published on NPM with zero dependencies.",
+    url: "https://www.npmjs.com/package/scannad",
+  },
   {
     name: "Rafiki AI App",
     img: "rafiki.svg",
