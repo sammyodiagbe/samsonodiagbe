@@ -1,15 +1,47 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import NavbarComponent from "@/components/navbar";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Odiagbe Samson Osaro",
-  description: "I share my journey in the world of coding and learning.",
+  title: "Samson Odiagbe | Software Developer",
+  description:
+    "Software developer passionate about building exceptional digital experiences. Specializing in React, Next.js, and modern web technologies.",
+  keywords: [
+    "software developer",
+    "web developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "frontend developer",
+  ],
+  authors: [{ name: "Samson Odiagbe" }],
+  openGraph: {
+    title: "Samson Odiagbe | Software Developer",
+    description:
+      "Software developer passionate about building exceptional digital experiences.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -18,11 +50,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={raleway.className}>
-        <NavbarComponent />
-        {children}
-        <Toaster />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange={false}
+        >
+          {children}
+          <Toaster />
+        </ThemeProvider>
         <SpeedInsights />
       </body>
     </html>

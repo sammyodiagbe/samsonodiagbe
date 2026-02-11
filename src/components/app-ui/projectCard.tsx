@@ -1,16 +1,16 @@
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
 import Image from "next/image";
 import { Project } from "@/lib/data";
 
-const ProjectComponent: React.FC<Project> = ({
-  detail,
+interface ProjectComponentProps {
+  name: string;
+  img: string;
+  description: string;
+  url: string;
+}
+
+const ProjectComponent: React.FC<ProjectComponentProps> = ({
+  description,
   img,
   name,
   url,
@@ -27,10 +27,8 @@ const ProjectComponent: React.FC<Project> = ({
         />
       </div>
       <div className="mb-[80px]">
-        <h1 className="mb-5 text-[18px] font-bold">
-          {name}
-        </h1>
-        <p className="leading-8">{detail}</p>
+        <h1 className="mb-5 text-[18px] font-bold">{name}</h1>
+        <p className="leading-8">{description}</p>
       </div>
       <div className="align-bottom">
         <Link
