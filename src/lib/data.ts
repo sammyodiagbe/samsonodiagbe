@@ -23,6 +23,54 @@ export const categoryLabels: Record<ProjectCategory, string> = {
 
 export const portfolioData: Project[] = [
   {
+    id: "taxxon",
+    name: "Taxxon",
+    img: "taxxon.png",
+    description:
+      "An AI-powered tax filing assistant that helps you navigate and complete your taxes with an intelligent co-pilot. Simplifies the tax filing process with smart guidance and automated assistance.",
+    url: "https://taxxon.vercel.app",
+    category: "web-app",
+    techStack: ["React", "Next.js", "TypeScript", "AI"],
+    featured: true,
+    year: 2024,
+  },
+  {
+    id: "hairsentials",
+    name: "Hairsentials",
+    img: "hairsentials.png",
+    description:
+      "A barber subscription and booking platform connecting clients with their favorite barbers. Features monthly subscription plans, smart booking, and recurring revenue tools for barbers. Serving 2,500+ barbers and 50K+ happy clients.",
+    url: "https://hairsentials.com",
+    category: "web-app",
+    techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    featured: true,
+    year: 2024,
+  },
+  {
+    id: "typee",
+    name: "Typpee",
+    img: "typee.png",
+    description:
+      "A gamified typing practice app with XP-based progression, leveling system, and unlockable achievements. Track your WPM, accuracy, and time spent while earning badges like Speedster, Lightning, and Perfect.",
+    url: "https://typee-gamma.vercel.app",
+    category: "web-app",
+    techStack: ["React", "TypeScript", "Vercel"],
+    featured: true,
+    year: 2024,
+  },
+  {
+    id: "usabi-playball",
+    name: "USABI Playball",
+    img: "usabiplayball.png",
+    description:
+      "A sports organization platform for USABI Playball Canada. Connecting players, managing teams, and organizing baseball events across the community.",
+    url: "https://usabiplayball.ca",
+    category: "web-app",
+    techStack: ["React", "Next.js", "TypeScript"],
+    featured: true,
+    year: 2024,
+  },
+  {
     id: "scannad",
     name: "ScannaD",
     img: "scannad.png",
