@@ -80,7 +80,7 @@ export default function Hero() {
             >
               <MagneticButton
                 as="a"
-                href="/docs/Samson_Odiagbe_Software_Developer_Resume (1).docx"
+                href="/docs/Samson_Odiagbe_JS_TS_Resume.docx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
