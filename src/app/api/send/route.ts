@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const data = await resend.emails.send({
-      from: "Portfolio Contact <sam@samsonodiagbe.online>",
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: "sammiodiagbe@gmail.com",
       replyTo: email,
       subject: `Portfolio Message from ${name}`,
@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
 
     return Response.json(data);
   } catch (error) {
-    return Response.json({ error });
+    console.error("Email send error:", error);
+    return Response.json({ error }, { status: 500 });
   }
 }

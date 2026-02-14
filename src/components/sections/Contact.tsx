@@ -66,7 +66,7 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="space-y-4 mb-8">
             <motion.a
-              href="mailto:sam@samsonodiagbe.online"
+              href="mailto:sammiodiagbe@gmail.com"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -76,7 +76,7 @@ export default function Contact() {
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
                 <Mail size={18} className="text-primary" />
               </div>
-              <span>sam@samsonodiagbe.online</span>
+              <span>sammiodiagbe@gmail.com</span>
             </motion.a>
 
             <motion.div
